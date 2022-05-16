@@ -1,0 +1,22 @@
+#ifndef DIGICLOCKPANEL_H
+#define DIGICLOCKPANEL_H
+
+#include <QDialog>
+
+namespace Ui {
+class DigiClockPanel;
+}
+
+class DigiClockPanel : public QDialog
+{
+    Q_OBJECT
+
+public:
+    explicit DigiClockPanel(QWidget *parent = nullptr);
+    ~DigiClockPanel();
+
+private:
+    Ui::DigiClockPanel *ui;
+};
+
+#endif // DIGICLOCKPANEL_H
